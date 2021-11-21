@@ -1,0 +1,337 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F3865;
+  background: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+}
+a {
+  color: #FC6A57;
+  text-decoration: none;
+}
+.title {
+  font-size: 48px;
+  line-height: 57px;
+  margin: 0 0 40px;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+}
+.color-primary {
+  color: #FC6A57;
+}
+.color-secondary {
+  color: #007EFF;
+}
+.color-mark {
+  color: #1F3865;
+}
+.color-main {
+  color: #FF974B;
+}
+.hero {
+  background: linear-gradient(180deg, #F2F2F2 0%, #FFFFFF 100%);
+  margin: 0 0 110px;
+}
+.hero-container {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 48px;
+  line-height: 57px;
+  color: #fff;
+  padding: 40px 0;
+  font-family: 'Rubik', sans-serif;
+}
+.user-container {
+  padding: 37px 40px 33px;
+  background: url("../img/avatar-decor.svg") no-repeat;
+}
+.user-container img {
+  width: 200px;
+  display: block;
+}
+.nav {
+  position: fixed;
+  background: linear-gradient(270deg, #F2F2F2 47.74%, rgba(242, 242, 242, 0) 65.15%);
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+}
+.nav-menu {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: right;
+  padding: 48px 0;
+}
+.nav-link {
+  background: #F2F2F2;
+  padding: 10px 32px;
+  box-shadow: 0px -6px 10px #FFFFFF, 0px 4px 15px rgba(31, 56, 101, 0.15);
+  border-radius: 20px;
+  margin-left: 8px;
+}
+.nav-link:hover {
+  box-shadow: inset 0px -6px 10px #FFFFFF, inset 0px 4px 15px rgba(31, 56, 101, 0.15);
+}
+.header {
+  flex: 0 1 360px;
+  position: relative;
+}
+.header-container {
+  z-index: 20;
+  position: relative;
+  text-align: center;
+  padding: 0 80px;
+}
+.header:before {
+  content: "";
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: -240px;
+  left: -200px;
+  background: url("../img/decor01.svg") no-repeat;
+  z-index: 1;
+}
+.header:after {
+  content: "";
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  left: 48px;
+  background: url("../img/decor02.svg") no-repeat;
+  z-index: 0;
+}
+.about {
+  padding-top: 205px;
+  flex: 0 1 780px;
+  text-align: right;
+}
+.info {
+  margin: 0 0 80px;
+}
+.info .title {
+  text-align: right;
+}
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.counter span {
+  display: block;
+  font-size: 32px;
+  line-height: 40px;
+  margin: 0 0 16px;
+}
+.counter .counter-box {
+  border: 4px solid #FC6A57;
+  border-radius: 20px 0px 0px 20px;
+  padding: 20px 80px 20px 20px;
+  margin-right: -80px;
+  border-right: 0;
+  color: #FC6A57;
+  display: flex;
+}
+.counter .counter-box svg {
+  margin-right: 20px;
+}
+.counter .counter-box span {
+  min-width: 190px;
+  text-align: left;
+  margin: 0;
+}
+.boxes {
+  background: #F2F2F2;
+}
+.box-holder {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 60px;
+}
+.box {
+  flex: 0 1 360px;
+  margin: 40px;
+  text-align: center;
+}
+.box-img {
+  padding: 30px;
+  margin: 0 0 16px;
+  background: #F2F2F2;
+  box-shadow: inset 0px -6px 10px #FFFFFF, inset 0px 4px 15px rgba(31, 56, 101, 0.15);
+}
+.box img {
+  width: 100%;
+  display: block;
+}
+.type-one,
+.type-two,
+.type-three {
+  margin: 0 0 80px;
+}
+.last {
+  margin: 0;
+}
+.type-one .name {
+  color: #FC6A57;
+} 
+.type-two .boxes {
+  background: none;
+}
+.type-two .box-holder {
+  justify-content: center;
+}
+.type-two .box {
+  flex: 0 1 200px;
+  margin: 0 20px 0 20px;
+  box-shadow: none;
+}
+.type-two .name {
+  color: #007EFF;
+} 
+.type-three .box-holder {
+  flex-wrap: wrap;
+}
+.type-three .box {
+  position: relative;
+}
+.type-three .box-details {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: inset 0px -6px 10px #FFFFFF, inset 0px 4px 15px rgba(31, 56, 101, 0.15);
+}
+.type-three .box-details-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  font-family: 'Rubik', sans-serif;
+}
+.type-three .box-details .link {
+  word-wrap: break-word;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.type-three .box-details-text * {
+  visibility: hidden;
+}
+.type-three .box:hover .box-details {
+  background: rgba(31, 56, 101, 0.8);
+  box-shadow: none;
+}
+.type-three .box:hover .box-details-text * {
+  visibility: visible;
+}
+.type-three .name {
+  color: #fff;
+} 
+.footer {
+  background: #F2F2F2;
+  padding: 40px 0;
+}
+.footer-logo {
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
+}
+.footer-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer svg * {
+  fill: #FC6A57;
+}
+/* mobile */
+@media only screen
+and (min-width: 0)
+and (max-width: 1023px) {
+  .nav {
+    top: auto;
+    bottom: 0;
+  }
+  .box-holder {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

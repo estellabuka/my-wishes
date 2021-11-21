@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My wishes!</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+              // Get today's date and time
+              var now = new Date().getTime();
+
+              // Find the distance between now and the count down date
+              var distance = countDownDate - now;
+
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+              // Display the result in the element with id="demo"
+              document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+
+              // If the count down is finished, write some text
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+        </script>
+        <div class="hero">
+            <div class="hero-container">
+                <header class="header">
+                    <div class="header-container">
+                        <h1 class="logo">My wishes</h1>
+                        <div class="user-container">
+                            <img class="user" src="img/avatar.png">
+                        </div>
+                        <a class="btn-social" href="#">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M33.6998 0H14.2978C10.5068 0.00445516 6.87227 1.51259 4.19181 4.19351C1.51134 6.87442 0.00381774 10.5092 0 14.3002V33.7022C0.00445516 37.4932 1.51259 41.1277 4.19351 43.8082C6.87442 46.4887 10.5092 47.9962 14.3002 48H33.7022C37.4932 47.9955 41.1277 46.4874 43.8082 43.8065C46.4887 41.1256 47.9962 37.4908 48 33.6998V14.2978C47.9955 10.5068 46.4874 6.87227 43.8065 4.19181C41.1256 1.51134 37.4908 0.00381774 33.6998 0ZM43.1724 33.6998C43.1724 34.9437 42.9273 36.1755 42.4513 37.3248C41.9753 38.474 41.2775 39.5183 40.3979 40.3979C39.5183 41.2775 38.474 41.9753 37.3248 42.4513C36.1755 42.9273 34.9437 43.1724 33.6998 43.1724H14.2978C11.786 43.1717 9.37718 42.1734 7.60125 40.397C5.82532 38.6207 4.82765 36.2116 4.82765 33.6998V14.2978C4.82829 11.786 5.82657 9.37718 7.60295 7.60125C9.37934 5.82532 11.7884 4.82765 14.3002 4.82765H33.7022C36.214 4.82829 38.6228 5.82657 40.3987 7.60295C42.1747 9.37934 43.1724 11.7884 43.1724 14.3002V33.6998Z" fill="white"/>
+                                <path d="M20.9192 16.6488V19.9536H18.5V23.9928H20.9192V36H25.892V23.9928H29.228C29.228 23.9928 29.5424 22.056 29.6936 19.9368H25.9112V17.1768C25.9112 16.7616 26.4536 16.2072 26.9912 16.2072H29.6984V12H26.0144C20.7968 12 20.9192 16.044 20.9192 16.6488Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a class="btn-social" href="#">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M33.6998 0H14.2978C10.5068 0.00445516 6.87227 1.51259 4.19181 4.19351C1.51134 6.87442 0.00381774 10.5092 0 14.3002V33.7022C0.00445516 37.4932 1.51259 41.1277 4.19351 43.8082C6.87442 46.4887 10.5092 47.9962 14.3002 48H33.7022C37.4932 47.9955 41.1277 46.4874 43.8082 43.8065C46.4887 41.1256 47.9962 37.4908 48 33.6998V14.2978C47.9955 10.5068 46.4874 6.87227 43.8065 4.19181C41.1256 1.51134 37.4908 0.00381774 33.6998 0ZM43.1724 33.6998C43.1724 34.9437 42.9273 36.1755 42.4513 37.3248C41.9753 38.474 41.2775 39.5183 40.3979 40.3979C39.5183 41.2775 38.474 41.9753 37.3248 42.4513C36.1755 42.9273 34.9437 43.1724 33.6998 43.1724H14.2978C11.786 43.1717 9.37718 42.1734 7.60125 40.397C5.82532 38.6207 4.82765 36.2116 4.82765 33.6998V14.2978C4.82829 11.786 5.82657 9.37718 7.60295 7.60125C9.37934 5.82532 11.7884 4.82765 14.3002 4.82765H33.7022C36.214 4.82829 38.6228 5.82657 40.3987 7.60295C42.1747 9.37934 43.1724 11.7884 43.1724 14.3002V33.6998Z" fill="white"/>
+                                <path d="M23.9988 11.5859C20.7085 11.591 17.5544 12.9005 15.228 15.2273C12.9016 17.5541 11.5927 20.7085 11.5883 23.9988C11.5921 27.29 12.901 30.4453 15.228 32.7727C17.555 35.1001 20.71 36.4097 24.0012 36.4141C27.2928 36.4103 30.4484 35.101 32.7759 32.7735C35.1034 30.446 36.4127 27.2904 36.4165 23.9988C36.4114 20.7076 35.1013 17.5528 32.7734 15.2263C30.4455 12.8998 27.29 11.5915 23.9988 11.5883V11.5859ZM23.9988 31.5865C21.9871 31.5865 20.0577 30.7873 18.6352 29.3648C17.2127 27.9423 16.4135 26.0129 16.4135 24.0012C16.4135 21.9895 17.2127 20.0601 18.6352 18.6376C20.0577 17.2151 21.9871 16.4159 23.9988 16.4159C26.0105 16.4159 27.9399 17.2151 29.3624 18.6376C30.7849 20.0601 31.5841 21.9895 31.5841 24.0012C31.5841 26.0129 30.7849 27.9423 29.3624 29.3648C27.9399 30.7873 26.0105 31.5865 23.9988 31.5865Z" fill="white"/>
+                                <path d="M36.4382 14.6536C38.0807 14.6536 39.4122 13.3221 39.4122 11.6796C39.4122 10.0371 38.0807 8.70563 36.4382 8.70563C34.7957 8.70563 33.4642 10.0371 33.4642 11.6796C33.4642 13.3221 34.7957 14.6536 36.4382 14.6536Z" fill="white"/>
+                                </svg>
+                        </a>
+                    </div>    
+                </header>
+                <div class="nav">
+                    <nav class="nav-menu">
+                        <a class="nav-link" href="#dreams">3 dreams</a>
+                        <a class="nav-link" href="#brands">5 brands </a>
+                        <a class="nav-link" href="#good">3 good idea </a>
+                        <a class="nav-link" href="#bad">3 bad idea </a>
+                        <a class="nav-link" href="#wishlist">wishlist</a>
+                    </nav>
+                </div>    
+                <div class="about">
+                    <div class="info">
+                        <h2 class="title color-primary">Keep in mind</h2>
+                        <p>I love surprises and unexpected pleasant emotions I prefer flowers in pots, but please don't forget about my cat. Some plants are dangerous to her</p>
+                    </div>
+                    <div class="counter">
+                        <span>My Birthday’s only</span>
+                        <span class="counter-box">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.2859 37.7146H25.7145V41.1432H22.2859V37.7146Z" fill="#FC6A57"/>
+                                <path d="M6.85737 22.2859H10.2859V25.7145H6.85737V22.2859Z" fill="#FC6A57"/>
+                                <path d="M37.7145 22.2859H41.1431V25.7145H37.7145V22.2859Z" fill="#FC6A57"/>
+                                <path d="M40.9708 7.0295C36.8983 2.93386 31.4766 0.457315 25.7145 0.0607507V0H22.2859V10.2858H25.7145V3.5006C36.2584 4.37468 44.5716 13.2343 44.5716 24.0002C44.5716 35.3434 35.3433 44.5719 24.0002 44.5719C12.6571 44.5719 3.4288 35.3434 3.4288 24.0002C3.42644 21.2939 3.95919 18.6138 4.99641 16.1141C6.03362 13.6144 7.55482 11.3445 9.47252 9.43488L21.8608 25.065L24.5477 22.9354L9.92166 4.48161L8.57102 5.61627C4.86691 8.72513 2.18834 12.8805 0.8863 17.5378C-0.415738 22.195 -0.280504 27.137 1.27428 31.7162C2.82906 36.2953 5.73087 40.2979 9.59945 43.1995C13.468 46.1012 18.1229 47.7665 22.9542 47.9772C27.7854 48.1879 32.5676 46.9343 36.6741 44.3805C40.7807 41.8267 44.02 38.0919 45.9675 33.6656C47.9151 29.2392 48.4801 24.3278 47.5885 19.5748C46.697 14.8218 44.3904 10.4491 40.971 7.0295H40.9708Z" fill="#FC6A57"/>
+                            </svg>
+                            <span id="demo"></span>
+                        </span>
+                        <span>away</span>
+                    </div>
+                </div>
+            </div>    
+        </div>    
+        <section class="type-one" id="dreams">
+            <h2 class="title color-primary">3 dreams</h2>
+            <div class="boxes">
+                <div class="box-holder">
+                    <div class="box">
+                        <div class="box-img"><img src="img/photo-dream01.png"></div>
+                        <span class="name">travel to Cuba</span>
+                    </div>
+                    <div class="box">
+                        <div class="box-img"><img src="img/photo-dream02.png"></div>
+                        <span class="name">world fame</span>
+                    </div>
+                    <div class="box">
+                        <div class="box-img"><img src="img/photo-dream03.png"></div>
+                        <span class="name">cozy art workshop</span>
+                    </div>
+                </div>  
+            </div>      
+        </section>
+        <section class="type-two" id="brands">
+            <h2 class="title color-secondary">5 brands</h2>
+            <div class="boxes">
+                <div class="box-holder">
+                    <div class="box">
+                        <img src="img/brand01.png">
+                        <span class="name">apple</span>
+                    </div>
+                    <div class="box">
+                        <img src="img/brand02.png">
+                        <span class="name">IKEA</span>
+                    </div>
+                    <div class="box">
+                        <img src="img/brand03.png">
+                        <span class="name">Jo Malone</span>
+                    </div>
+                    <div class="box">
+                        <img src="img/brand04.png">
+                        <span class="name">philips</span>
+                    </div>
+                    <div class="box">
+                        <img src="img/brand05.png">
+                        <span class="name">D&G</span>
+                    </div>
+                </div> 
+            </div>       
+        </section>
+        <section class="type-one" id="good">
+            <h2 class="title color-mark">3 always <span class="color-primary">GOOD</span> idea</h2>
+            <div class="boxes">
+                <div class="box-holder">
+                    <div class="box">
+                        <div class="box-img"><img src="img/good01.png"></div>
+                        <span class="name">candles</span>
+                    </div>
+                    <div class="box">
+                        <div class="box-img"><img src="img/good02.png"></div>
+                        <span class="name">cute notebooks</span>
+                    </div>
+                    <div class="box">
+                        <div class="box-img"><img src="img/good03.png"></div>
+                        <span class="name">money</span>
+                    </div>
+                </div>   
+            </div>     
+        </section>
+        <section class="type-one" id="bad">
+            <h2 class="title color-mark">3 always <span class="color-main">BAD</span> idea</h2>
+            <div class="boxes">
+                <div class="box-holder">
+                    <div class="box">
+                        <div class="box-img"><img src="img/bad01.png"></div>
+                        <span class="name">souvenirs</span>
+                    </div>
+                    <div class="box">
+                        <div class="box-img"><img src="img/bad02.png"></div>
+                        <span class="name">stuffed toys</span>
+                    </div>
+                    <div class="box">
+                        <div class="box-img"><img src="img/bad03.png"></div>
+                        <span class="name">sweets</span>
+                    </div>
+                </div>    
+            </div>    
+        </section>
+        <section class="type-three last" id="wishlist">
+            <h2 class="title color-secondary">wishlist</h2>
+            <div class="boxes">
+                <div class="box-holder">
+                    <div class="box">
+                        <img src="img/wish01.png">
+                        <div class="box-details">
+                            <div class="box-details-text">
+                                <span class="name">Yves Saint Laurent Black Opium</span>
+                                <a class="link" href="https://www.brocard.ua/ru/product/parfyumirovannaya-voda-yves-saint-laurent-black-opium-90-ml-001059">https://www.brocard.ua/ru/product/parfyumirovannaya-voda-yves-saint-laurent-black-opium-90-ml-001059</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/wish02.png">
+                        <div class="box-details">
+                            <div class="box-details-text">
+                                <span class="name"></span>
+                                <a class="link" href="#"></a>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/wish03.png">
+                        <div class="box-details">
+                            <div class="box-details-text">
+                                <span class="name"></span>
+                                <a class="link" href="#"></a>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/wish04.png">
+                        <div class="box-details">
+                            <div class="box-details-text">
+                                <span class="name"></span>
+                                <a class="link" href="#"></a>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/wish05.png">
+                        <div class="box-details">
+                            <div class="box-details-text">
+                                <span class="name"></span>
+                                <a class="link" href="#"></a>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/wish06.png">
+                        <div class="box-details">
+                            <div class="box-details-text">
+                                <span class="name"></span>
+                                <a class="link" href="#"></a>
+                            </div>    
+                        </div>
+                    </div>
+                </div>    
+            </div>    
+        </section>
+        <footer class="footer">
+            <div class="footer-container">
+                <a class="footer-logo" href="#">My wishes</a>
+                <div>
+                    <a class="btn-social" href="#">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M33.6998 0H14.2978C10.5068 0.00445516 6.87227 1.51259 4.19181 4.19351C1.51134 6.87442 0.00381774 10.5092 0 14.3002V33.7022C0.00445516 37.4932 1.51259 41.1277 4.19351 43.8082C6.87442 46.4887 10.5092 47.9962 14.3002 48H33.7022C37.4932 47.9955 41.1277 46.4874 43.8082 43.8065C46.4887 41.1256 47.9962 37.4908 48 33.6998V14.2978C47.9955 10.5068 46.4874 6.87227 43.8065 4.19181C41.1256 1.51134 37.4908 0.00381774 33.6998 0ZM43.1724 33.6998C43.1724 34.9437 42.9273 36.1755 42.4513 37.3248C41.9753 38.474 41.2775 39.5183 40.3979 40.3979C39.5183 41.2775 38.474 41.9753 37.3248 42.4513C36.1755 42.9273 34.9437 43.1724 33.6998 43.1724H14.2978C11.786 43.1717 9.37718 42.1734 7.60125 40.397C5.82532 38.6207 4.82765 36.2116 4.82765 33.6998V14.2978C4.82829 11.786 5.82657 9.37718 7.60295 7.60125C9.37934 5.82532 11.7884 4.82765 14.3002 4.82765H33.7022C36.214 4.82829 38.6228 5.82657 40.3987 7.60295C42.1747 9.37934 43.1724 11.7884 43.1724 14.3002V33.6998Z" fill="white"/>
+                                    <path d="M20.9192 16.6488V19.9536H18.5V23.9928H20.9192V36H25.892V23.9928H29.228C29.228 23.9928 29.5424 22.056 29.6936 19.9368H25.9112V17.1768C25.9112 16.7616 26.4536 16.2072 26.9912 16.2072H29.6984V12H26.0144C20.7968 12 20.9192 16.044 20.9192 16.6488Z" fill="white"/>
+                                </svg>
+                            </a>
+                            <a class="btn-social" href="#">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M33.6998 0H14.2978C10.5068 0.00445516 6.87227 1.51259 4.19181 4.19351C1.51134 6.87442 0.00381774 10.5092 0 14.3002V33.7022C0.00445516 37.4932 1.51259 41.1277 4.19351 43.8082C6.87442 46.4887 10.5092 47.9962 14.3002 48H33.7022C37.4932 47.9955 41.1277 46.4874 43.8082 43.8065C46.4887 41.1256 47.9962 37.4908 48 33.6998V14.2978C47.9955 10.5068 46.4874 6.87227 43.8065 4.19181C41.1256 1.51134 37.4908 0.00381774 33.6998 0ZM43.1724 33.6998C43.1724 34.9437 42.9273 36.1755 42.4513 37.3248C41.9753 38.474 41.2775 39.5183 40.3979 40.3979C39.5183 41.2775 38.474 41.9753 37.3248 42.4513C36.1755 42.9273 34.9437 43.1724 33.6998 43.1724H14.2978C11.786 43.1717 9.37718 42.1734 7.60125 40.397C5.82532 38.6207 4.82765 36.2116 4.82765 33.6998V14.2978C4.82829 11.786 5.82657 9.37718 7.60295 7.60125C9.37934 5.82532 11.7884 4.82765 14.3002 4.82765H33.7022C36.214 4.82829 38.6228 5.82657 40.3987 7.60295C42.1747 9.37934 43.1724 11.7884 43.1724 14.3002V33.6998Z" fill="white"/>
+                                    <path d="M23.9988 11.5859C20.7085 11.591 17.5544 12.9005 15.228 15.2273C12.9016 17.5541 11.5927 20.7085 11.5883 23.9988C11.5921 27.29 12.901 30.4453 15.228 32.7727C17.555 35.1001 20.71 36.4097 24.0012 36.4141C27.2928 36.4103 30.4484 35.101 32.7759 32.7735C35.1034 30.446 36.4127 27.2904 36.4165 23.9988C36.4114 20.7076 35.1013 17.5528 32.7734 15.2263C30.4455 12.8998 27.29 11.5915 23.9988 11.5883V11.5859ZM23.9988 31.5865C21.9871 31.5865 20.0577 30.7873 18.6352 29.3648C17.2127 27.9423 16.4135 26.0129 16.4135 24.0012C16.4135 21.9895 17.2127 20.0601 18.6352 18.6376C20.0577 17.2151 21.9871 16.4159 23.9988 16.4159C26.0105 16.4159 27.9399 17.2151 29.3624 18.6376C30.7849 20.0601 31.5841 21.9895 31.5841 24.0012C31.5841 26.0129 30.7849 27.9423 29.3624 29.3648C27.9399 30.7873 26.0105 31.5865 23.9988 31.5865Z" fill="white"/>
+                                    <path d="M36.4382 14.6536C38.0807 14.6536 39.4122 13.3221 39.4122 11.6796C39.4122 10.0371 38.0807 8.70563 36.4382 8.70563C34.7957 8.70563 33.4642 10.0371 33.4642 11.6796C33.4642 13.3221 34.7957 14.6536 36.4382 14.6536Z" fill="white"/>
+                                    </svg>
+                            </a>
+                </div>            
+            </div>
+        </footer>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
